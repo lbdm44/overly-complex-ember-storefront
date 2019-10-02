@@ -1,13 +1,26 @@
 <nav class="nav">
   <h3 class="nav__headline pl2">Seriously Complex Storefront</h3>
-  <div class="nav__actions pr2">
-    <button>Cart</button>
-    <button>Admin</button>
+  <div class="nav-actions pr2">
+    <button class="nav-actions__cart">
+      {{fa-icon
+        icon="shopping-cart"
+        size="2x"
+      }}
+      (2)
+    </button>
+    <button class="nav-actions__admin">
+      Admin
+    </button>
   </div>
 </nav>
 
 <div class="content">
-  <div class="fake-block"></div>
+  <ul class="top-items">
+    <li class="top-item"></li>
+    <li class="top-item"></li>
+    <li class="top-item"></li>
+    <li class="top-item"></li>
+  </ul>
 </div>
 
 {{outlet}}
