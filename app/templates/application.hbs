@@ -1,16 +1,19 @@
 <nav class="nav">
   <h3 class="nav__headline pl2">Seriously Complex Storefront</h3>
   <div class="nav-actions pr2">
-    <button class="nav-actions__cart">
+    <a class="nav-actions__cart" href="/cart">
       {{fa-icon
         icon="shopping-cart"
         size="2x"
       }}
       (2)
-    </button>
-    <button class="nav-actions__admin">
-      Admin
-    </button>
+    </a>
+    <a class="nav-actions__admin" href="/admin">
+      {{fa-icon
+        icon="user-cog"
+        size="2x"
+      }}
+    </a>
   </div>
 </nav>
 
