@@ -3,8 +3,19 @@
 const EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
 module.exports = function(defaults) {
-  let app = new EmberApp(defaults, {
-    // Add options here
+  const app = new EmberApp(defaults, {
+    eyeglass: {
+      /*
+       * Enable discovery of Sass files to compile.
+       * All files not beginning with an underscore will be compiled.
+       */
+      discover: true,
+       /* apply other broccoli-eyeglass options here */
+       /* apply node-sass options here */
+      eyeglass: {
+        /* eyeglass options */
+      }
+    }
   });
 
   // Use `app.import` to add additional libraries to the generated

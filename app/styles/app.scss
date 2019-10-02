@@ -1,0 +1,27 @@
+@import "ds";
+
+// Nav Bar
+.nav {
+  position: fixed;
+  top: 0;
+  height: 48px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: darkcyan;
+}
+
+.nav__headline {
+  color: #fff;
+}
+
+// Content box
+.content {
+  margin-top: 56px;
+  width: 100%;
+}
+
+.fake-block {
+  border: 1px solid black;
+  height: 5000px;
+}
