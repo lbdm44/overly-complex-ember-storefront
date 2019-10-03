@@ -22,6 +22,62 @@
 
 // Content box
 .content {
-  margin-top: 56px;
+  margin-top: 48px;
+  padding: 8px;
+}
+
+// Store
+.store-section {
+  border: 4px solid gray;
+  padding: 8px;
+}
+
+// Top Items
+.top-items {
+  list-style: none;
   width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.top-item {
+  border: 1px solid black;
+  height: 240px;
+  width: 240px;
+  padding: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.top-item__main {
+  display: flex;
+  justify-content: center;
+}
+
+.top-item__footer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+// Categories
+.category-list {
+  list-style: none;
+}
+
+.category-list__item:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.category-list__category-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.category-list__category-expand {
+  font-size: inherit;
+  border: 0;
+  padding: 0;
 }
