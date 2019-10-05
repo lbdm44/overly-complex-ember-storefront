@@ -1,5 +1,7 @@
 # overly-complex-ember-storefront
 
+[![Build Status](https://travis-ci.com/lbdm44/overly-complex-ember-storefront.svg?branch=master)](https://travis-ci.com/lbdm44/overly-complex-ember-storefront)
+
 This README outlines the details of collaborating on this Ember application.
 
 An overly complex EmberJS application setup.
