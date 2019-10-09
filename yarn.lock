@@ -4146,6 +4146,14 @@ ember-maybe-import-regenerator@^0.1.6:
     ember-cli-babel "^6.0.0-beta.4"
     regenerator-runtime "^0.9.5"
 
+ember-prefetch@^3.1.4:
+  version "3.1.4"
+  resolved "https://registry.yarnpkg.com/ember-prefetch/-/ember-prefetch-3.1.4.tgz#0147a9a2510bd3e07edf7ccad9d47a6369886028"
+  integrity sha512-iLcD/HI7OFJqBaatRoCpwY7RiCTT34brOD68aCesircGvbhRY814NJfM6RX3gbL/sN/PpLzq2mdkSBtGp257pg==
+  dependencies:
+    ember-cli-babel "^7.1.2"
+    ember-compatibility-helpers "^1.1.2"
+
 ember-qunit@^4.5.1:
   version "4.5.1"
   resolved "https://registry.yarnpkg.com/ember-qunit/-/ember-qunit-4.5.1.tgz#dc4b0a794fbeb6702a02f28bf19091de0f90fd5a"
