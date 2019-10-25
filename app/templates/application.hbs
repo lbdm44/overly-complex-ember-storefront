@@ -1,12 +1,20 @@
 <nav class="nav">
-  <h3 class="nav__headline pl2">Seriously Complex Storefront</h3>
+  <h3 class="nav__headline pl2">
+    {{#link-to "index" class="link--wo-style"}}
+      Seriously Complex Storefront
+    {{/link-to}}
+  </h3>
   <div class="nav-actions pr2">
-    <a data-test-nav-action="true" class="nav-actions__cart link--wo-style" href="/cart">
+    {{#link-to
+      "cart"
+      class="nav-actions__cart link--wo-style"
+      data-test-nav-action="true"
+    }}
       <span class="fa-layers fa-fw">
         {{fa-icon icon="shopping-cart"}}
-        <span class="fa-layers-counter">2</span>
+        <span class="fa-layers-counter nav-actions__cart-count">2</span>
       </span>
-    </a>
+    {{/link-to}}
     <a data-test-nav-action="true" class="nav-actions__admin link--wo-style" href="/admin">
       {{fa-icon icon="user-cog"}}
     </a>
