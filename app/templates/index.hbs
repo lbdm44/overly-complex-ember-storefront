@@ -4,50 +4,9 @@
   </header>
   <main class="store-section__main">
     <ul class="top-items">
-      <li>
-        <article class="shop-item">
-          <header class="shop-item__header">Some Rando Item #1</header>
-          <main class="shop-item__main">
-            <img src="https://via.placeholder.com/160" alt="some-rando-item-1">
-          </main>
-          <footer class="shop-item__footer">
-            <button>Add to cart</button>
-          </footer>
-        </article>
-      </li>
-      <li>
-        <article class="shop-item">
-          <header class="shop-item__header">Some Rando Item #2</header>
-          <main class="shop-item__main">
-            <img src="https://via.placeholder.com/160" alt="some-rando-item-2">
-          </main>
-          <footer class="shop-item__footer">
-            <button>Add to cart</button>
-          </footer>
-        </article>
-      </li>
-      <li>
-        <article class="shop-item">
-          <header class="shop-item__header">Some Rando Item #3</header>
-          <main class="shop-item__main">
-            <img src="https://via.placeholder.com/160" alt="some-rando-item-3">
-          </main>
-          <footer class="shop-item__footer">
-            <button>Add to cart</button>
-          </footer>
-        </article>
-      </li>
-      <li>
-        <article class="shop-item">
-          <header class="shop-item__header">Some Rando Item #4</header>
-          <main class="shop-item__main">
-            <img src="https://via.placeholder.com/160" alt="some-rando-item-4">
-          </main>
-          <footer class="shop-item__footer">
-            <button>Add to cart</button>
-          </footer>
-        </article>
-      </li>
+      {{#each model as |item|}}
+        {{item-description$item-detail item=item}}
+      {{/each}}
     </ul>
   </main>
 </section>
