@@ -82,7 +82,8 @@
   },
   "ember-addon": {
     "paths": [
-      "lib/item-description"
+      "lib/item-description",
+      "lib/item-main"
     ]
   }
 }

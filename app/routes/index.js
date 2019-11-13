@@ -5,7 +5,7 @@ export default Route.extend({
     return [...Array(4)].map((_, i) => {
       return {
         itemName: `Some Rando Item #${i + 1}`,
-        className: `some-rando-item-${i + 1}`,
+        imgAlt: `some-rando-item-${i + 1}`,
       };
     });
   },
