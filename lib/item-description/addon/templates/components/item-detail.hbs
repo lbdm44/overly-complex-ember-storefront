@@ -1,11 +1,9 @@
 <li>
   <article class="shop-item">
     <header class="shop-item__header">{{item.itemName}}</header>
-    <main class="shop-item__main">
-      <img src="https://via.placeholder.com/160" alt={{item.className}}>
-    </main>
+    {{item-main$item-meta className=item.className}}
     <footer class="shop-item__footer">
-      <button>Add to cart</button>
+      <button>{{buttonTitle}}</button>
     </footer>
   </article>
 </li>
