@@ -10,15 +10,15 @@ module('Integration | Component | item-meta', function(hooks) {
     // Set any properties with this.set('myProperty', 'value');
     // Handle any actions with this.set('myAction', function(val) { ... });
 
-    await render(hbs`<ItemMeta />`);
+    await render(hbs`<item-meta />`);
 
     assert.equal(this.element.textContent.trim(), '');
 
     // Template block usage:
     await render(hbs`
-      <ItemMeta>
+      <item-meta>
         template block text
-      </ItemMeta>
+      </item-meta>
     `);
 
     assert.equal(this.element.textContent.trim(), 'template block text');
