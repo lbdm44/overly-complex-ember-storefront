@@ -1,6 +1,6 @@
 import { module, test } from 'qunit';
 import { setupRenderingTest } from 'ember-qunit';
-import { render } from '@ember/test-helpers';
+import { render, find } from '@ember/test-helpers';
 import hbs from 'htmlbars-inline-precompile';
 
 module('Integration | Component | item-meta', function(hooks) {
@@ -10,17 +10,24 @@ module('Integration | Component | item-meta', function(hooks) {
     // Set any properties with this.set('myProperty', 'value');
     // Handle any actions with this.set('myAction', function(val) { ... });
 
-    await render(hbs`<item-meta />`);
+    await render(hbs`{{item-main$item-meta}}`);
 
-    assert.equal(this.element.textContent.trim(), '');
+    assert.ok(find('.shop-item__main'), 'main class is found');
+    assert.ok(find('.shop-item-image'), 'Image is rendered');
+    assert.notOk(
+      find('.shop-item-image').hasAttribute('alt'),
+      'alt attribute is not added when imgAlt is not passed'
+    );
 
-    // Template block usage:
     await render(hbs`
-      <item-meta>
-        template block text
-      </item-meta>
+      {{item-main$item-meta imgAlt="test-alt-id"}}
     `);
 
-    assert.equal(this.element.textContent.trim(), 'template block text');
+    assert.ok(find('.shop-item-image'), 'Image is rendered');
+    assert.equal(
+      find('.shop-item-image').getAttribute('alt'),
+      'test-alt-id',
+      'alt attribute renders correct value'
+    );
   });
 });
